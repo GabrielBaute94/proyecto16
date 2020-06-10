@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Proyecto 16 OMDB</title>
+
+    <!-- CSS de Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- CSS de FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    
+    <!-- CSS Propio -->
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-lg-3">
+                <div id="search" class="box">
+                    <h4>Película</h4>
+                    <form id="search-form">
+                        <div class="form-group">
+                            <input id="input-movie" type="text" name="movie" value="" class="form-control" placeholder="Escribir título...">
+                        </div>
+                        <button id="btn-search" class="btn btn-success" type="submit" name="button">
+                            <span id="not-loading" class="">Buscar película</span>
+                            <span id="loading" class="d-none">Buscando <i class="fa fa-spinner fa-spin"></i></span>
+                        </button>
+                    </form>
+                </div><!-- /#seach -->
+            </div><!-- /.col -->
+            <div class="col-md-8 col-lg-9">
+    
+                <div id="welcome" class="box">
+                    <h2>Buscador de películas</h2>
+                    <p>Escribí el título de una película (en inglés) y obtené información sobre la misma.</p>
+                    <p>Este servicio funciona gracias a la API de <a href="http://www.omdbapi.com/" target="_blank">OMDB</a> que retonra información sobre películas en formato JSON.</p>
+                </div>
+    
+                <div id="no-movie" class="alert alert-warning d-none" role="alert">
+                    Lo sentimos. No fue posible encontrar una película con el título buscado.
+                </div>
+    
+                <div id="movie" class="box d-none">
+    
+                    <!--
+                            Notar que inicialmente los textos y atributos están vacíos.
+                            Se cargan por JavaScript.
+                        -->
+    
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img id="image" class="img-fluid" src="" alt="Imagen de la película" />
+                        </div><!-- /.col -->
+                        <div class="col-sm-8">
+    
+                            <h1></h1>
+                            <h2 id="director">Director: <span></span></h2>
+    
+                            <h3>Argumento</h3>
+                            <p id="plot"></p>
+    
+                            <h3>Actores</h3>
+                            <p id="actors"></p>
+    
+                            <h3>País</h3>
+                            <p id="country"></p>
+    
+                            <h3>Premios</h3>
+                            <p id="awards"></p>
+    
+                            <h3>Ratings:</h3>
+                            <ul id="ratings">
+                                <!-- Inicialmente vacío -->
+                            </ul>
+    
+                            <hr>
+    
+                            <a href="#" id="btn-website" class="btn btn-outline-secondary" target="_blank">Ir al sitio web</a>
+    
+                        </div><!-- /.col -->
+                    </div><!-- /.row -->
+                </div><!-- /#movie -->
+            </div><!-- /.col -->
+        </div><!-- /.row -->
+    
+    </div><!-- /.container -->
+
+
+
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <!-- JS de Popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    
+    <!-- JS de Bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <!-- JS de Vue.js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    
+    <!-- JS Propio -->
+    <script src="js/app.js"> </script>
+
+</body>
+</html>

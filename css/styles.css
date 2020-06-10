@@ -1,0 +1,60 @@
+body {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.box {
+    background-color: #F5F5F5;
+    border: 1px solid #DDD;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+#welcome {
+    font-size: 16px;
+}
+
+#welcome h2 {
+    margin: 0 0 15px 0;
+    font-size: 30px;
+}
+
+#search h4 {
+    margin: 0 0 15px 0;
+    font-size: 16px;
+}
+
+#movie {
+    background-color: #F5F5F5;
+    border: 1px solid #DDD;
+    padding: 20px 15px;
+}
+
+#movie h1 {
+    margin: 0 0 20px 0;
+    font-size: 32px;
+}
+
+#movie h2 {
+    font-size: 22px;
+}
+
+#movie h3 {
+    font-size: 18px;
+}
+
+#movie hr {
+    border-top: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 767px) {
+    #movie h1 {
+        margin: 15px 0 15px 0;
+        font-size: 22px;
+    }
+    #movie h3 {
+        font-size: 18px;
+    }
+}
